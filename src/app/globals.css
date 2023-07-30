@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: 'AlataRegular';
+  src: url('/fonts/alata-regular.woff2') format('woff2'),
+       url('/fonts/alata-regular.woff') format('woff');
+  font-style: normal;
+}   
