@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "./header";
+import Header from "./Heeader";
+import bgimage from "../assets/images/bg-hero-image.jpg";
 
 export default function Hero() {
   return (
     <div
       className="bg-center bg-cover h-screen w-full"
       style={{
-        backgroundImage: `url('/bg-hero-image.jpg')`,
+        backgroundImage: `url(${bgimage})`,
       }}
     >
       <div>

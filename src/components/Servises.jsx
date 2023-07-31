@@ -1,11 +1,12 @@
 import React from "react";
+import icon2 from "../assets/icons/web-dev.svg"
 
 const Services = () => {
   const posts = [
     {
       id: 1,
       title: "web development",
-      icon: "/images/web-dev.svg",
+      icon: "../assets/icons/web-dev.svg",
       description:
         "Lorem Ispum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
@@ -61,7 +62,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div>
         <h1 className="capitalize text-center text-titile font-secondary pb-2">
           what i can do
@@ -84,7 +85,6 @@ const Services = () => {
           >
             <img
               src={index.icon}
-              alt={index.title}
               className=" h-20 object-cover rounded"
             />
             <h2 className="mt-4 text-xl font-secondary text-titile capitalize pb-4">

@@ -31,7 +31,7 @@ module.exports = {
     },
     fontFamily: {
       primary: ["poppins"],
-      secondary: ['PT Sans']
+      secondary: ['Alata']
     },
     fontSize: {
       titile: [
@@ -44,7 +44,7 @@ module.exports = {
       ]
     },
     height: {
-      hero: "44rem",
+      hero: "50rem",
     },
     maxWidth: {
       layout: "1366px"
