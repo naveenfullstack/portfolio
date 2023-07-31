@@ -1,7 +1,6 @@
 import React from "react";
-import icon2 from "../assets/icons/web-dev.svg"
 
-const Services = () => {
+export default function Services() {
   const posts = [
     {
       id: 1,
@@ -68,7 +67,7 @@ const Services = () => {
           what i can do
         </h1>
         <div className="flex justify-center">
-          <hr className="my-2 w-14 h-2 border-t-4 border-hr-color" />
+          <hr className="mb-2 w-16 border-boarder" />
         </div>
         <p className="text-center pb-12">
           Lorem Ipsum is simply dummy It was popularised in the 1960s with the
@@ -81,10 +80,11 @@ const Services = () => {
         {posts.map((index) => (
           <div
             key={index.id}
-            className="border rounded bg-primary_bg rounded-default p-10 pt-10 pb-10"
+            className="border rounded bg-primary_bg rounded-lg p-10 pt-10 pb-10"
           >
             <img
               src={index.icon}
+              alt={index.title}
               className=" h-20 object-cover rounded"
             />
             <h2 className="mt-4 text-xl font-secondary text-titile capitalize pb-4">
@@ -96,6 +96,4 @@ const Services = () => {
       </div>
     </div>
   );
-};
-
-export default Services;
+}

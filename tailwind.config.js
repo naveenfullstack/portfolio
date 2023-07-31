@@ -12,7 +12,7 @@ module.exports = {
         primary_text: "#ffffff",
         link_color: "#2997ff",
         secondary_text: "#112B53",
-        boarder: "#91A2BC",
+        boarder: "#0065D3",
         therd_text: "#B4B1B1",
         submit_button : "#DADADA",
         submit_text : "#125490",
@@ -41,6 +41,14 @@ module.exports = {
           letterSpacing: "-0.01em",
           fontWeight: "400",
         },
+      ],
+      hero_title: [
+        "3rem",
+        {
+          lineHeight: "4rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
       ]
     },
     height: {
@@ -52,13 +60,17 @@ module.exports = {
     borderWidth: {
       arrow: '0.5px',
     },
-    borderRadius: {
-      none: '0',
-      default: '1rem',
-    },
     opacity: {
       default: '.60',
     },
+    borderRadius: {
+      'none': '0',
+      'sm': '0.125rem',
+      'md': '0.375rem',
+      'lg': '0.5rem',
+      'full': '9999px',
+      'large': '12px',
+    }
   },
   plugins: [],
 };

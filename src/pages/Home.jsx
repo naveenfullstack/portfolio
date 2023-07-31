@@ -1,8 +1,10 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Services from "../components/Servises";
-import Header from "../components/Heeader";
-import bg from "../assets/images/bg-image-2.jpg"
+import bg from "../assets/images/bg-image-2.jpg";
+import ProjectProcess from "../components/ProjectProcess";
+import WhatClientSay from "../components/WhatClientSay";
+import Projects from "../components/Projects";
 
 const Home = () => {
   return (
@@ -13,20 +15,16 @@ const Home = () => {
       }}
     >
       <div className="w-full">
-
-        {/* <div className="items-center justify-center">
-            <div className="pr-10 pl-10">
-                <Header/>
-            </div>
-        </div> */}
-
         <div>
           <Hero />
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="max-w-layout  pr-10 pl-10">
+          <div className="max-w-layout  pr-10 pl-10 space-y-8">
+            <Projects />
             <Services />
+            <ProjectProcess />
+            <WhatClientSay />
           </div>
         </div>
       </div>
