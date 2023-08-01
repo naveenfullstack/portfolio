@@ -1,4 +1,5 @@
 import React from "react";
+import ViewAllProjects from "../assets/icons/view-all-projects.svg";
 
 export default function Projects() {
   const Projects = [
@@ -75,7 +76,7 @@ export default function Projects() {
         <div className="flex justify-center">
           <hr className="mb-2 w-16 border-boarder" />
         </div>
-        <p className="text-center pb-12">
+        <p className="text-center pb-12 font-primary opacity-default text-paragraph">
           Lorem Ipsum is simply dummy It was popularised in the 1960s with the
           release of Letraset sheets containing Lorem Ipsum passages, and more
           recently with desktop publishing software like Aldus PageMaker
@@ -84,18 +85,32 @@ export default function Projects() {
       </div>
 
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {Projects.map((index) => (
             <div
               key={index.id}
-              className="border rounded rounded-lg overflow-hidden"
-              //   style={{
-              //     backgroundImage: `url(${index.img})`,
-              //   }}
+              className="border w-full rounded-lg lg:h-project md:h-project sm:h-project_mobile bg-cover bg-top"
+              style={{
+                backgroundImage: `url(${index.img})`,
+              }}
             >
-              <img className="w-full h-auto" src={index.img} alt="project"></img>
+              {/* <img
+                className="w-full rounded-lg h-project object-cover object-top"
+                src={index.img}
+                alt="project"
+              ></img> */}
             </div>
           ))}
+          <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-project md:h-project sm:h-project_mobile">
+            <div className="">
+              <div className="flex justify-center">
+                <img className="" src={ViewAllProjects} alt="Project"></img>
+              </div>
+              <div className="flex justify-center text-primary ">
+                <p>view all projects</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import "../src/App.css"
 
 /* IMPORT COMPORNENTS */
 import Home from "./pages/Home";

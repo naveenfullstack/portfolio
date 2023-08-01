@@ -16,22 +16,21 @@ module.exports = {
         therd_text: "#B4B1B1",
         submit_button : "#DADADA",
         submit_text : "#125490",
+        input_bg : "#454545",
       },
       backgroundPosition: {
         'parallax': 'center top',
       },
     },
     screens: {
-      xs: "320px",
-      sm: "480px",
+      sm: "320px",
       md: "768px",
       lg: "1024px",
       xl: "1440px",
-      xxl: "1920px",
     },
     fontFamily: {
-      primary: ["poppins"],
-      secondary: ['Alata']
+      primary: ['Poppins', 'sans-serif'],
+      secondary: ['Alata', 'sans-serif']
     },
     fontSize: {
       titile: [
@@ -42,8 +41,40 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      paragraph: [
+        "0.85rem",
+        {
+          lineHeight: "1.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      hireme: [
+        "1.75rem",
+        {
+          lineHeight: "2.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
       hero_title: [
-        "3rem",
+        "2.5rem",
+        {
+          lineHeight: "3.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      input_icon: [
+        "1.3rem",
+        {
+          lineHeight: "4rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      input_icon_mobile: [
+        "1.3rem",
         {
           lineHeight: "4rem",
           letterSpacing: "-0.01em",
@@ -51,14 +82,14 @@ module.exports = {
         },
       ]
     },
-    height: {
-      hero: "50rem",
-    },
     maxWidth: {
       layout: "1366px"
     },
     borderWidth: {
       arrow: '0.5px',
+      project: '3px',
+      project_mobile: '1px',
+      '0': '0',
     },
     opacity: {
       default: '.60',
@@ -70,7 +101,12 @@ module.exports = {
       'lg': '0.5rem',
       'full': '9999px',
       'large': '12px',
-    }
+    },
+    height: {
+      project: '30rem',
+      project_mobile: '15rem',
+      hero: "50rem",
+    },
   },
   plugins: [],
 };
