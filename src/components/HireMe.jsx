@@ -20,6 +20,7 @@ export default function HireMe() {
             <input
               className="p-2 rounded-lg bg-input_bg text-white lg:w-60 sm:w-full font-primary"
               placeholder="Enter your email"
+              type="email"
             ></input>
             <button className="bg-black text-white p-2 pl-6 pr-6 rounded-lg">
               Submit

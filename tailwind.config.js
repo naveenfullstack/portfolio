@@ -83,7 +83,8 @@ module.exports = {
       ]
     },
     maxWidth: {
-      layout: "1366px"
+      layout: "1366px",
+      heder_logo : "10rem"
     },
     borderWidth: {
       arrow: '0.5px',

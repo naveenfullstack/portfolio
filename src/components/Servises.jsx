@@ -1,60 +1,68 @@
 import React from "react";
+import webDevIcon from "../assets/icons/web-dev.svg";
+import appDevIcon from "../assets/icons/app-dev.svg";
+import backend from "../assets/icons/back-end.svg";
+import uiux from "../assets/icons/uiux.svg";
+import nocode from "../assets/icons/no-code.svg";
+import seo from "../assets/icons/seo.svg";
+import marketing from "../assets/icons/marketing.svg";
+import ecommerce from "../assets/icons/e-commerce.svg";
 
 export default function Services() {
   const posts = [
     {
       id: 1,
       title: "web development",
-      icon: "https://icons8.com/icon/39210/monitor",
+      icon: webDevIcon,
       description:
         "Lorem Ispum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 2,
       title: "app development",
-      icon: "/images/web-dev.svg",
+      icon: appDevIcon,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 3,
       title: "back-end development",
-      icon: "/images/web-dev.svg",
+      icon: backend,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 4,
       title: "UI/UX design",
-      icon: "/images/web-dev.svg",
+      icon: uiux,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 5,
       title: "no - code",
-      icon: "/images/web-dev.svg",
+      icon: nocode,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 6,
       title: "SEO",
-      icon: "/images/web-dev.svg",
+      icon: seo,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 7,
       title: "digital marketing",
-      icon: "/images/web-dev.svg",
+      icon: marketing,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
     {
       id: 8,
       title: "E - Commerce",
-      icon: "/images/web-dev.svg",
+      icon: ecommerce,
       description:
         "Lorem Ipsum is simply dummy  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ",
     },
@@ -80,17 +88,21 @@ export default function Services() {
         {posts.map((index) => (
           <div
             key={index.id}
-            className="border rounded bg-primary_bg rounded-lg lg:p-10 md:p-6 sm:p-4"
+            className="border rounded bg-primary_bg rounded-lg lg:p-8 md:p-6 sm:p-4"
           >
-            <img
-              src={index.icon}
-              alt={index.title}
-              className="h-20 object-cover rounded"
-            />
-            <h2 className="sm:text-center md:text-left lg:text-left mt-4 text-xl font-secondary text-titile capitalize pb-4">
+            <div className="w-full flex sm:justify-center md:justify-center lg:justify-start">
+              <img
+                src={index.icon}
+                alt={index.title}
+                className="h-20 object-cover rounded sm:justify-center"
+              />
+            </div>
+            <h2 className="sm:text-center md:text-center lg:text-left mt-4 text-xl font-secondary text-titile capitalize pb-4">
               {index.title}
             </h2>
-            <p className="sm:text-center md:text-left lg:text-left text-paragraph">{index.description}</p>
+            <p className="sm:text-center md:text-center lg:text-left text-paragraph">
+              {index.description}
+            </p>
           </div>
         ))}
       </div>
