@@ -25,12 +25,12 @@ export default function Header() {
         <div className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
-            className="block px-4 py-2 text-white"
+            className="flex justify-end block px-4 py-2 text-white w-full"
           >
             <AiOutlineMenu className="text-titile" />
           </button>
           {isMobileMenuOpen && (
-            <div className="py-2">
+            <div className="py-2 w-full absolute">
               <a
                 href="https://fitwin.co"
                 className="block px-4 py-2 text-white"
