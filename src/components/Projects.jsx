@@ -68,7 +68,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div>
+    <div className="sm:mt-8">
       <div>
         <h1 className="capitalize text-center text-titile font-secondary pb-2">
           my projects

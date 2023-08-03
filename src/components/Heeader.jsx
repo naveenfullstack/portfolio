@@ -11,9 +11,9 @@ export default function Header() {
   return (
     <div className="flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full bg-black lg:pb-6 md:pb-6 sm:pb-2 ">
       <div className="lg:w-1/4">
-        <img src={Naveen} alt="logo" className="w-full max-w-heder_logo" />
+        <img src={Naveen} alt="logo" className="w-full max-w-heder_logo " />
       </div>
-      <div className="lg:flex lg:w-3/4 lg:justify-end">
+      <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center">
             <h1 href="https://fitwin.co">Work Experience</h1>
@@ -22,7 +22,7 @@ export default function Header() {
             <h1 href="https://fitwin.co">Projects</h1>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden w-full">
           <button
             onClick={toggleMobileMenu}
             className="flex justify-end block px-4 py-2 text-white w-full"
@@ -30,31 +30,33 @@ export default function Header() {
             <AiOutlineMenu className="text-titile" />
           </button>
           {isMobileMenuOpen && (
-            <div className="py-2 w-full absolute">
-              <a
-                href="https://fitwin.co"
-                className="block px-4 py-2 text-white"
-              >
-                Work Experience
-              </a>
-              <a
-                href="https://fitwin.co"
-                className="block px-4 py-2 text-white"
-              >
-                Education
-              </a>
-              <a
-                href="https://fitwin.co"
-                className="block px-4 py-2 text-white"
-              >
-                About Me
-              </a>
-              <a
-                href="https://fitwin.co"
-                className="block px-4 py-2 text-white"
-              >
-                Projects
-              </a>
+            <div className="py-2 w-full flex justify-end text-right">
+              <div className="bg-primary_bg absolute rounded-lg sm:mt-6 md:mt-10 pt-2 pb-2">
+                <a
+                  href="https://fitwin.co"
+                  className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
+                >
+                  Work Experience
+                </a>
+                <a
+                  href="https://fitwin.co"
+                  className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
+                >
+                  Education
+                </a>
+                <a
+                  href="https://fitwin.co"
+                  className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
+                >
+                  About Me
+                </a>
+                <a
+                  href="https://fitwin.co"
+                  className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
+                >
+                  Projects
+                </a>
+              </div>
             </div>
           )}
         </div>

@@ -41,6 +41,14 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      title_mobile: [
+        "1.5rem",
+        {
+          lineHeight: "2.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
       paragraph: [
         "0.85rem",
         {
