@@ -8,6 +8,7 @@ export default function Header() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   return (
     <div className="flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full bg-black lg:pb-6 md:pb-6 sm:pb-2 ">
       <div className="lg:w-1/4">
@@ -16,10 +17,10 @@ export default function Header() {
       <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center">
-            <h1 href="https://fitwin.co">Work Experience</h1>
-            <h1 href="https://fitwin.co">Education</h1>
-            <h1 href="https://fitwin.co">About Me</h1>
-            <h1 href="https://fitwin.co">Projects</h1>
+            <a href="#hire">Word Experience</a>
+            <a href="#hire">Education</a>
+            <a href="https://fitwin.co">About Me</a>
+            <a href="https://fitwin.co">Projects</a>
           </div>
         </div>
         <div className="lg:hidden w-full">

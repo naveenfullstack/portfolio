@@ -7,7 +7,8 @@ import ProjectProcess from "../components/ProjectProcess";
 import Projects from "../components/Projects";
 import HireMe from "../components/HireMe";
 
-export default function Home () {
+export default function Home() {
+
   return (
     <div
       className="flex bg-black text-white bg-center bg-cover place-content-center bg-no-repeat bg-fixed"
@@ -22,11 +23,11 @@ export default function Home () {
 
         <div className="flex items-center justify-center">
           <div className="max-w-layout p-4 space-y-8">
-            <Projects />
-            <Services />
-            <ProjectProcess />
+            <Projects id="projects" />
+            <Services id="services" />
+            <ProjectProcess id="process" />
             {/* <WhatClientSay /> */}
-            <HireMe/>
+              <HireMe/>
           </div>
         </div>
       </div>

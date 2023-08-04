@@ -77,7 +77,7 @@ export default function Services() {
         <div className="flex justify-center">
           <hr className="mb-2 w-16 border-boarder" />
         </div>
-        <p className="text-center pb-12 font-primary opacity-default text-paragraph">
+        <p className="text-center pb-12 font-primary text-description text-paragraph">
           Lorem Ipsum is simply dummy It was popularised in the 1960s with the
           release of Letraset sheets containing Lorem Ipsum passages, and more
           recently with desktop publishing software like Aldus PageMaker

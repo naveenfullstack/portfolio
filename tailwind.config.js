@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary_bg: "#303030",
         primary_text: "#ffffff",
+        description: "#999999",
         link_color: "#2997ff",
         secondary_text: "#112B53",
         boarder: "#0065D3",
@@ -24,7 +25,7 @@ module.exports = {
     },
     screens: {
       sm: "320px",
-      md: "768px",
+      md: "600px",
       lg: "1024px",
       xl: "1440px",
     },
@@ -82,7 +83,7 @@ module.exports = {
         },
       ],
       input_icon_mobile: [
-        "1.3rem",
+        "2rem",
         {
           lineHeight: "4rem",
           letterSpacing: "-0.01em",
@@ -99,9 +100,6 @@ module.exports = {
       project: '3px',
       project_mobile: '1px',
       '0': '0',
-    },
-    opacity: {
-      default: '.60',
     },
     borderRadius: {
       'none': '0',
