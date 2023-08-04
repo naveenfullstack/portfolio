@@ -4,11 +4,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => { setIsMobileMenuOpen(!isMobileMenuOpen);};
   const [scrolled, setScrolled] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +24,7 @@ export default function Header() {
 
   return (
     <div
-      className={`flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full lg:pb-6 md:pb-6 sm:pb-2 ${
+      className={`z-10 flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full lg:pb-6 md:pb-6 sm:pb-2 ${
         scrolled ? "bg-black" : "bg-transparent"
       }`}
       style={{

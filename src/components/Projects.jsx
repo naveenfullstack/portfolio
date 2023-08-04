@@ -1,6 +1,6 @@
 import React from "react";
 import ViewAllProjects from "../assets/icons/view-all-projects.svg";
-import "./css/Custom.scss"
+import "./css/Custom.scss";
 
 export default function Projects() {
   const Projects = [
@@ -87,7 +87,7 @@ export default function Projects() {
 
       <div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {Projects.map((index)  => ( 
+          {Projects.map((index) => (
             <div
               key={index.id}
               className="border w-full rounded-lg lg:h-project md:h-project sm:h-project_mobile bg-cover bg-top"
@@ -130,5 +130,3 @@ export default function Projects() {
     </div>
   );
 }
-
-// opacity-0 hover:opacity-100 transition-opacity
