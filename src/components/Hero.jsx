@@ -2,9 +2,9 @@ import React from "react";
 import Header from "./Heeader";
 import bgimage from "../assets/images/dark-mountain-4k-3vxidfa2y5t5uk4m.jpg";
 
-export default function Hero({ id, scrollToSection }) {
+export default function Hero() {
   return (
-    <section id={id}>
+    <section>
       <div
         className="bg-cover h-screen w-full"
         style={{
@@ -29,7 +29,6 @@ export default function Hero({ id, scrollToSection }) {
               <button
                 href="#projects"
                 className="px-4 lg:py-3 md:py-3 sm:py-2 my-2.5 bg-primary_bg rounded-lg font-primaryfont sm:text-paragraph"
-                onClick={() => scrollToSection('hire')}
               >
                 Explore Projcts
               </button>

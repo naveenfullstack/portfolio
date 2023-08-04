@@ -89,7 +89,23 @@ module.exports = {
           letterSpacing: "-0.01em",
           fontWeight: "400",
         },
-      ]
+      ],
+      project_name: [
+        "1.5rem",
+        {
+          lineHeight: "2.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      project_type: [
+        "0.8rem",
+        {
+          lineHeight: "2.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
     },
     maxWidth: {
       layout: "1366px",
@@ -113,6 +129,7 @@ module.exports = {
       project: '30rem',
       project_mobile: '15rem',
       hero: "50rem",
+      full: "100%",
     },
   },
   plugins: [],

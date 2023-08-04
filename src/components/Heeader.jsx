@@ -1,16 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Naveen from "../assets/images/NAVEEN..svg";
 import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full bg-black lg:pb-6 md:pb-6 sm:pb-2 ">
+    <div
+      className={`flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full lg:pb-6 md:pb-6 sm:pb-2 ${
+        scrolled ? "bg-black" : "bg-transparent"
+      }`}
+      style={{
+        backgroundColor: scrolled ? "black" : "rgba(0, 0, 0, 0)",
+      }}
+    >
       <div className="lg:w-1/4">
         <img src={Naveen} alt="logo" className="w-full max-w-heder_logo " />
       </div>
