@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <div
       className={`z-10 flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full lg:pb-6 md:pb-6 sm:pb-2 ${
-        scrolled ? "bg-black" : "bg-transparent"
+        scrolled ? "bg-black"  : "bg-transparent"
       }`}
       style={{
         backgroundColor: scrolled ? "black" : "rgba(0, 0, 0, 0)",
@@ -36,11 +36,11 @@ export default function Header() {
       </div>
       <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
-          <div className="flex space-x-11 font-primaryfont text-white justify-center items-center">
-            <a href="#hire">Word Experience</a>
-            <a href="#hire">Education</a>
-            <a href="https://fitwin.co">About Me</a>
-            <a href="https://fitwin.co">Projects</a>
+          <div className="flex space-x-11 font-primaryfont text-white justify-center items-center capitalize">
+            <a href="#hire" className="hover:font-semibold">hire me</a>
+            <a href="#process" className="hover:font-semibold">process</a>
+            <a href="#services"className="hover:font-semibold">services</a>
+            <a href="#projects"className="hover:font-semibold">My Projects</a>
           </div>
         </div>
         <div className="lg:hidden w-full">
@@ -52,30 +52,30 @@ export default function Header() {
           </button>
           {isMobileMenuOpen && (
             <div className="py-2 w-full flex justify-end text-right">
-              <div className="bg-primary_bg absolute rounded-lg sm:mt-6 md:mt-10 pt-2 pb-2">
+              <div className="bg-primary_bg absolute rounded-lg sm:mt-6 md:mt-10 pt-2 pb-2 capitalize">
                 <a
-                  href="https://fitwin.co"
+                  href="#projects"
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
-                  Work Experience
+                  my projects
                 </a>
                 <a
-                  href="https://fitwin.co"
+                  href="#services"
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
-                  Education
+                  services
                 </a>
                 <a
-                  href="https://fitwin.co"
+                  href="#process"
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
-                  About Me
+                  process
                 </a>
                 <a
-                  href="https://fitwin.co"
+                  href="#hire"
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
-                  Projects
+                  hire me
                 </a>
               </div>
             </div>

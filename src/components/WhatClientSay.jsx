@@ -55,8 +55,8 @@ export default function WhatClientSay() {
   ];
 
   return (
-    <div className="w-full">
-      <div>
+    <div className="w-full flex justify-center">
+      <div className="w-full">
         <h1 className="capitalize text-center text-titile font-secondary pb-2">
           what clients say about me
         </h1>
@@ -70,40 +70,42 @@ export default function WhatClientSay() {
           including versions of Lorem Ipsum.
         </p>
 
-        <div className="w-full">
-          <Swiper
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            slidesPerView={2}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            {testinomials.map((index) => (
-              <SwiperSlide key={index.id}>
-                <div className="bg-primary_bg p-6 rounded-lg">
-                  <div>
-                    <p className="text-left pb-4">{index.description}</p>
-                  </div>
-                  <div className="flex">
-                    <div className="w-20">
-                      <img
-                        className="rounded-full"
-                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-                        alt="logo"
-                      />
+        <div className="w-full flex justify-center">
+          <div className="xl:w-[1440px] lg:w-[1024px] md:w-[600px] sm:w-[320px]">
+            <Swiper
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              slidesPerView={2}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="w-full"
+            >
+              {testinomials.map((index) => (
+                <SwiperSlide key={index.id}>
+                  <div className="bg-primary_bg p-6 rounded-lg">
+                    <div>
+                      <p className="text-left pb-4">{index.description}</p>
                     </div>
-                    <div className="text-left pl-6">
-                      <h1>{index.name}</h1>
-                      <p>{index.position}</p>
+                    <div className="flex">
+                      <div className="w-20">
+                        <img
+                          className="rounded-full"
+                          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                          alt="logo"
+                        />
+                      </div>
+                      <div className="text-left pl-6">
+                        <h1>{index.name}</h1>
+                        <p>{index.position}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
 
         <div className="flex justify-end pt-8 space-x-2">

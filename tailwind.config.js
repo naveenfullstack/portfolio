@@ -101,7 +101,15 @@ module.exports = {
       project_type: [
         "0.8rem",
         {
-          lineHeight: "2.5rem",
+          lineHeight: "1.5rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
+      project_button: [
+        "0.85rem",
+        {
+          lineHeight: "1rem",
           letterSpacing: "-0.01em",
           fontWeight: "400",
         },
@@ -109,7 +117,8 @@ module.exports = {
     },
     maxWidth: {
       layout: "1366px",
-      heder_logo : "10rem"
+      heder_logo : "10rem",
+      popup : "60rem"
     },
     borderWidth: {
       arrow: '0.5px',
@@ -130,6 +139,9 @@ module.exports = {
       project_mobile: '15rem',
       hero: "50rem",
       full: "100%",
+    },
+    maxHeight: {
+      '80': '33rem',
     },
   },
   plugins: [],

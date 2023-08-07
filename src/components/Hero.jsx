@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Heeader";
-import bgimage from "../assets/images/dark-mountain-4k-3vxidfa2y5t5uk4m.jpg";
+import bgimage from "../assets/images/bg-hero-image.jpg";
 
 export default function Hero() {
   return (
     <section>
       <div
-        className="bg-cover h-screen w-full"
+        className="bg-cover bg-bottom h-hero w-full"
         style={{
           backgroundImage: `url(${bgimage})`,
         }}
