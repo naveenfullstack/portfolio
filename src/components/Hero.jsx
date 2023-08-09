@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./Heeader";
-import bgimage from "../assets/images/bg-hero-image.jpg";
+import bgimage from "../assets/images/bg-hero-image.avif";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
     <section>
       <div
-        className="bg-cover bg-bottom h-hero w-full"
+        className="bg-cover lg:bg-center md:bg-center sm:bg-top h-hero w-full"
         style={{
           backgroundImage: `url(${bgimage})`,
         }}
@@ -16,7 +17,7 @@ export default function Hero() {
         </div>
 
         <div className="lg:h-hero justify-center items-center">
-          <div className="pt-28">
+          <div className="lg:pt-28 sm:pt-48 md:pt-28">
             <h1 className="text-center capitalize my-5 mb-2.5 leading-extra-lead lg:text-hero_title md:text-hero_title sm:text-title_mobile font-secondary">
               Bring Your Imagination To Life <br />
               with digital solutions
@@ -26,12 +27,13 @@ export default function Hero() {
               1960s with the release of letraset sheets
             </p>
             <div className="text-center">
-              <button
-                href="#projects"
+              <Link
+                to="projects"
+                smooth={true}
                 className="px-4 lg:py-3 md:py-3 sm:py-2 my-2.5 bg-primary_bg rounded-lg font-primaryfont sm:text-paragraph"
               >
                 Explore Projcts
-              </button>
+              </Link>
             </div>
           </div>
         </div>

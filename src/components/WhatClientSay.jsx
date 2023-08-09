@@ -71,16 +71,16 @@ export default function WhatClientSay() {
         </p>
 
         <div className="w-full flex justify-center">
-          <div className="xl:w-[1440px] lg:w-[1024px] md:w-[600px] sm:w-[320px]">
+          <div className="w-full">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              slidesPerView={2}
+              slidesPerView={3}
               spaceBetween={30}
               pagination={{
                 clickable: true,
               }}
               modules={[Pagination]}
-              className="w-full"
+              className=""
             >
               {testinomials.map((index) => (
                 <SwiperSlide key={index.id}>

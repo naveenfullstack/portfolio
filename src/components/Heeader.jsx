@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import Naveen from "../assets/images/NAVEEN..svg";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const toggleMobileMenu = () => { setIsMobileMenuOpen(!isMobileMenuOpen);};
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,22 +28,46 @@ export default function Header() {
   return (
     <div
       className={`z-10 flex items-center justify-between lg:pt-6 md:pt-6 lg:pr-20 md:pr-20 lg:pl-20 md:pl-20 sm:pl-4 fixed w-full lg:pb-6 md:pb-6 sm:pb-2 ${
-        scrolled ? "bg-black"  : "bg-transparent"
+        scrolled ? "bg-black" : "bg-transparent"
       }`}
       style={{
         backgroundColor: scrolled ? "black" : "rgba(0, 0, 0, 0)",
       }}
     >
-      <div className="lg:w-1/4">
+      <Link className="lg:w-1/4" to="hero" smooth={true}>
         <img src={Naveen} alt="logo" className="w-full max-w-heder_logo " />
-      </div>
+      </Link>
       <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center capitalize">
-            <a href="#hire" className="hover:font-semibold">hire me</a>
-            <a href="#process" className="hover:font-semibold">process</a>
-            <a href="#services"className="hover:font-semibold">services</a>
-            <a href="#projects"className="hover:font-semibold">My Projects</a>
+            <Link
+              className="hover:font-semibold cursor-poitor"
+              to="hire"
+              smooth={true}
+            >
+              hire me
+            </Link>
+            <Link
+              className="hover:font-semibold cursor-pointer"
+              to="process"
+              smooth={true}
+            >
+              process
+            </Link>
+            <Link
+              className="hover:font-semibold cursor-pointer"
+              to="services"
+              smooth={true}
+            >
+              services
+            </Link>
+            <Link
+              className="hover:font-semibold cursor-pointer"
+              to="projects"
+              smooth={true}
+            >
+              My Projects
+            </Link>
           </div>
         </div>
         <div className="lg:hidden w-full">
@@ -53,30 +80,34 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className="py-2 w-full flex justify-end text-right">
               <div className="bg-primary_bg absolute rounded-lg sm:mt-6 md:mt-10 pt-2 pb-2 capitalize">
-                <a
-                  href="#projects"
+                <Link
+                  to="projects"
+                  smooth={true}
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
                   my projects
-                </a>
-                <a
-                  href="#services"
+                </Link>
+                <Link
+                  to="services"
+                  smooth={true}
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
                   services
-                </a>
-                <a
-                  href="#process"
+                </Link>
+                <Link
+                  to="process"
+                  smooth={true}
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
                   process
-                </a>
-                <a
-                  href="#hire"
+                </Link>
+                <Link
+                  to="hire"
+                  smooth={true}
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
                   hire me
-                </a>
+                </Link>
               </div>
             </div>
           )}

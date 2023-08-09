@@ -173,7 +173,7 @@ export default function Projects() {
           </div>
         </div>
 
-      {/* Mobile and Tab Grid */}
+        {/* Mobile and Tab Grid */}
 
         <div className="sm:block md:block lg:hidden">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -185,8 +185,7 @@ export default function Projects() {
                   backgroundImage: `url(${index.img})`,
                 }}
                 onClick={() => handleExternalLinkClick(index.view_more)}
-              >
-              </div>
+              ></div>
             ))}
             <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-project md:h-project sm:h-project_mobile">
               <div className="">
