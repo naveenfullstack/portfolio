@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Heeader";
+import Header from "./Header/Heeader";
 import bgimage from "../assets/images/bg-hero-image.avif";
 import { Link } from "react-scroll";
 

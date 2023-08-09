@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Naveen from "../assets/images/NAVEEN..svg";
+import Naveen from "../../assets/images/NAVEEN..svg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 
@@ -41,7 +41,7 @@ export default function Header() {
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center capitalize">
             <Link
-              className="hover:font-semibold cursor-poitor"
+              className="hover:font-semibold cursor-pointer"
               to="hire"
               smooth={true}
             >

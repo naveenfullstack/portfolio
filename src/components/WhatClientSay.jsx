@@ -57,24 +57,28 @@ export default function WhatClientSay() {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full">
-        <h1 className="capitalize text-center text-titile font-secondary pb-2">
-          what clients say about me
-        </h1>
-        <div className="flex justify-center">
-          <hr className="mb-2 w-16 border-boarder" />
+        <div className="w-full flex justify-center items-center">
+          <div className="max-w-layout">
+            <h1 className="capitalize text-center text-titile font-secondary pb-2">
+              what clients say about me
+            </h1>
+            <div className="flex justify-center">
+              <hr className="mb-2 w-16 border-boarder" />
+            </div>
+            <p className="text-center pb-12 text-description font-primary text-paragraph">
+              Lorem Ipsum is simply dummy It was popularised in the 1960s with
+              the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
         </div>
-        <p className="text-center pb-12 text-description font-primary text-paragraph">
-          Lorem Ipsum is simply dummy It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
 
         <div className="w-full flex justify-center">
-          <div className="w-full">
+          <div className="w-full pl-40">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              slidesPerView={3}
+              slidesPerView={2}
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -108,21 +112,23 @@ export default function WhatClientSay() {
           </div>
         </div>
 
-        <div className="flex justify-end pt-8 space-x-2">
-          <img
-            style={{ cursor: "pointer" }}
-            onClick={() => swiperRef.current?.slidePrev()}
-            className="w-12"
-            src={RightArrow}
-            alt="logo"
-          />
-          <img
-            style={{ cursor: "pointer" }}
-            onClick={() => swiperRef.current?.slideNext()}
-            className="w-12"
-            src={LeftArrow}
-            alt="logo"
-          />
+        <div className="flex justify-end pt-8 w-full">
+          <div className="flex pr-10 space-x-2">
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => swiperRef.current?.slidePrev()}
+              className="w-12"
+              src={RightArrow}
+              alt="logo"
+            />
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => swiperRef.current?.slideNext()}
+              className="w-12"
+              src={LeftArrow}
+              alt="logo"
+            />
+          </div>
         </div>
       </div>
     </div>
