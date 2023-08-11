@@ -54,24 +54,25 @@ export default function ClientTestimonials() {
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
         {testinomials.map((index) => (
-          <div key={index.id} className="">
-            <div className="bg-primary_bg p-6 rounded-lg ">
-              <div>
-                <p className="text-left pb-4 text-[#ffffff]/[.60]">
-                  {index.description}
-                </p>
+          <div className="p-6 pt-0 px-0 rounded-lg">
+            <div className="flex">
+              <div className="lg:w-[12rem] md:w-[12rem] sm:w-[25rem]">
+                <img
+                  className="rounded-full"
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                  alt="logo"
+                />
               </div>
-              <div className="flex items-center">
-                <div className="w-20">
-                  <img
-                    className="rounded-full"
-                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-                    alt="logo"
-                  />
+              <div className="text-left pl-6 space-y-1">
+                <h1 className="text-[1.2rem] font-semibold">{index.name}</h1>
+                <p className="text-[#ffffff]/[.60] pb-2">{index.position}</p>
+                <div className="flex justify-start">
+                  <hr className="mb-2 w-16 border-boarder" />
                 </div>
-                <div className="text-left pl-6">
-                  <h1 className="font-semibold">{index.name}</h1>
-                  <p className="text-[#ffffff]/[.60]">{index.position}</p>
+                <div>
+                  <p className="text-left pb-4 text-[#ffffff]/[.60]">
+                    {index.description}
+                  </p>
                 </div>
               </div>
             </div>

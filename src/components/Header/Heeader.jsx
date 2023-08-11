@@ -20,12 +20,15 @@ export default function Header() {
       }
 
       // Update active menu item based on scroll position
-      const sections = ["hire", "process", "services", "projects"];
+      const sections = ["hire", "process", "services", "projects", "myclients"];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          if (
+            rect.top <= window.innerHeight / 1.4 &&
+            rect.bottom >= window.innerHeight / 2
+          ) {
             setActiveMenuItem(section);
           }
         }
@@ -48,33 +51,23 @@ export default function Header() {
       }}
     >
       <Link className="lg:w-1/4" to="hero" smooth={true}>
-        <img src={Naveen} alt="logo" className="w-full max-w-heder_logo " />
+        <img src={Naveen} alt="logo" className="w-full max-w-heder_logo cursor-pointer " />
       </Link>
       <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center capitalize">
-          <Link
-              onClick={() => setActiveMenuItem("hire")} // Update active menu item
+            <Link
+              onClick={() => setActiveMenuItem("projects")}
               className={`hover:font-semibold cursor-pointer ${
-                activeMenuItem === "hire" ? "text-blue-500" : ""
+                activeMenuItem === "projects" ? "text-blue-500" : ""
               }`}
-              to="hire"
+              to="projects"
               smooth={true}
             >
-              hire me
+              My Projects
             </Link>
             <Link
-              onClick={() => setActiveMenuItem("process")} // Update active menu item
-              className={`hover:font-semibold cursor-pointer ${
-                activeMenuItem === "process" ? "text-blue-500" : ""
-              }`}
-              to="process"
-              smooth={true}
-            >
-              process
-            </Link>
-            <Link
-              onClick={() => setActiveMenuItem("services")} // Update active menu item
+              onClick={() => setActiveMenuItem("services")}
               className={`hover:font-semibold cursor-pointer ${
                 activeMenuItem === "services" ? "text-blue-500" : ""
               }`}
@@ -84,14 +77,34 @@ export default function Header() {
               services
             </Link>
             <Link
-              onClick={() => setActiveMenuItem("projects")} // Update active menu item
+              onClick={() => setActiveMenuItem("myclients")}
               className={`hover:font-semibold cursor-pointer ${
-                activeMenuItem === "projects" ? "text-blue-500" : ""
+                activeMenuItem === "myclients" ? "text-blue-500" : ""
               }`}
-              to="projects"
+              to="myclients"
               smooth={true}
             >
-              My Projects
+              my clients
+            </Link>
+            <Link
+              onClick={() => setActiveMenuItem("process")}
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "process" ? "text-blue-500" : ""
+              }`}
+              to="process"
+              smooth={true}
+            >
+              process
+            </Link>
+            <Link
+              onClick={() => setActiveMenuItem("hire")}
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "hire" ? "text-blue-500" : ""
+              }`}
+              to="hire"
+              smooth={true}
+            >
+              hire me
             </Link>
           </div>
         </div>
@@ -118,6 +131,13 @@ export default function Header() {
                   className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
                 >
                   services
+                </Link>
+                <Link
+                  to="myclients"
+                  smooth={true}
+                  className="block px-4 py-2 text-white pt-2 pb-2 hover:bg-white hover:text-black transition delay-0 duration-150 ease-in-out"
+                >
+                  My Clients
                 </Link>
                 <Link
                   to="process"

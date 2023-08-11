@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section>
       <div
-        className="bg-cover lg:bg-center md:bg-center sm:bg-top h-hero w-full"
+        className="bg-cover lg:bg-center md:bg-center sm:bg-top lg:h-hero md:h-hero sm:h-[25rem] w-full"
         style={{
           backgroundImage: `url(${bgimage})`,
         }}
@@ -16,8 +16,8 @@ export default function Hero() {
           <Header />
         </div>
 
-        <div className="lg:h-hero justify-center items-center">
-          <div className="lg:pt-28 sm:pt-48 md:pt-28">
+        <div className="lg:h-hero justify-center items-center ">
+          <div className="lg:pt-28 sm:pt-48 md:pt-28 bg-gradient-to-b from-black space-y-4">
             <h1 className="text-center capitalize my-5 mb-2.5 leading-extra-lead lg:text-hero_title md:text-hero_title sm:text-title_mobile font-secondary">
               Bring Your Imagination To Life <br />
               with digital solutions
@@ -30,7 +30,7 @@ export default function Hero() {
               <Link
                 to="projects"
                 smooth={true}
-                className="px-4 lg:py-3 md:py-3 sm:py-2 my-2.5 bg-primary_bg rounded-lg font-primaryfont sm:text-paragraph"
+                className="px-4 lg:py-3 md:py-3 sm:py-3 my-2.5 bg-primary_bg rounded-lg font-primaryfont sm:text-paragraph"
               >
                 Explore Projcts
               </Link>

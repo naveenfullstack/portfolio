@@ -34,7 +34,7 @@ export default function BackToTop() {
           isVisible ? "visible" : "invisible"
         } fixed bottom-4 right-4 bg-primary_bg hover:bg-boarder rounded-full h-[3rem] text-white font-bold py-2 px-4 rounded shadow z-10`}
       >
-        <AiOutlineArrowUp className=""/>
+        <AiOutlineArrowUp />
       </button>
     </div>
   );

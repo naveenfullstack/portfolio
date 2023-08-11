@@ -47,7 +47,7 @@ module.exports = {
         {
           lineHeight: "2.5rem",
           letterSpacing: "-0.01em",
-          fontWeight: "400",
+          fontWeight: "500",
         },
       ],
       paragraph: [
@@ -126,6 +126,7 @@ module.exports = {
     maxWidth: {
       layout: "1366px",
       heder_logo : "10rem",
+      heder_logo_mobile : "6rem",
       popup : "60rem"
     },
     borderWidth: {

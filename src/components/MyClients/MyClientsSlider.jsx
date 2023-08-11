@@ -65,18 +65,22 @@ export default function MyClientsSlider() {
             >
               <div className="h-full w-full bg-gradient-to-b from-black">
                 <div className="flex w-full h-full items-center bg-gradient-to-t from-black">
-                  <div className="mx-60">
-                    <div className="max-w-heder_logo">
-                      <img className="" src={index.logo} alt="logo"></img>
+                  <div className="lg:mx-60 md:mx-60 sm:px-4 space-y-2">
+                    <div className="flex w-full lg:justify-start md:justify-start sm:justify-center">
+                      <img
+                        className="lg:max-w-heder_logo md:max-w-heder_logo sm:max-w-heder_logo_mobile"
+                        src={index.logo}
+                        alt="logo"
+                      ></img>
                     </div>
-                    <h1 className="text-left font-secondary text-[64px]">
+                    <h1 className="lg:text-left md:text-left sm:text-center font-secondary lg:text-[4rem] md:text-[4rem] sm:text-[2rem]">
                       {index.name}
                     </h1>
-                    <p className="text-left max-w-[600px] text-[#ffffff]/[.60] font-primary text-client_description pb-6">
+                    <p className="lg:text-left md:text-left sm:text-center max-w-[600px] text-[#ffffff]/[.60] font-primary text-client_description pb-6">
                       {index.description}
                     </p>
-                    <div className="flex justify-start">
-                      <button className="bg-primary_bg p-3 px-6 rounded-lg capitalize">
+                    <div className="flex lg:justify-start lg:justify-start sm:justify-center w-full">
+                      <button className="bg-primary_bg p-3 sm:px-4 md:px-4 lg:px-6 rounded-lg capitalize sm:text-[1rem]">
                         {index.button_text}
                       </button>
                     </div>
@@ -87,6 +91,16 @@ export default function MyClientsSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <style jsx>
+        {`
+          @media (max-width: 640px) {
+            .swiper-button-prev,
+            .swiper-button-next {
+              display: none !important;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 }
