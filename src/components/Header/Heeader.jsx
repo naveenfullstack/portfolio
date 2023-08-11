@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState("");
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -16,6 +17,18 @@ export default function Header() {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+
+      // Update active menu item based on scroll position
+      const sections = ["hire", "process", "services", "projects"];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            setActiveMenuItem(section);
+          }
+        }
       }
     };
 
@@ -40,29 +53,41 @@ export default function Header() {
       <div className="lg:flex lg:w-3/4 lg:justify-end w-full">
         <div className="lg:flex lg:space-x-11 font-primary hidden lg:block">
           <div className="flex space-x-11 font-primaryfont text-white justify-center items-center capitalize">
-            <Link
-              className="hover:font-semibold cursor-pointer"
+          <Link
+              onClick={() => setActiveMenuItem("hire")} // Update active menu item
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "hire" ? "text-blue-500" : ""
+              }`}
               to="hire"
               smooth={true}
             >
               hire me
             </Link>
             <Link
-              className="hover:font-semibold cursor-pointer"
+              onClick={() => setActiveMenuItem("process")} // Update active menu item
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "process" ? "text-blue-500" : ""
+              }`}
               to="process"
               smooth={true}
             >
               process
             </Link>
             <Link
-              className="hover:font-semibold cursor-pointer"
+              onClick={() => setActiveMenuItem("services")} // Update active menu item
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "services" ? "text-blue-500" : ""
+              }`}
               to="services"
               smooth={true}
             >
               services
             </Link>
             <Link
-              className="hover:font-semibold cursor-pointer"
+              onClick={() => setActiveMenuItem("projects")} // Update active menu item
+              className={`hover:font-semibold cursor-pointer ${
+                activeMenuItem === "projects" ? "text-blue-500" : ""
+              }`}
               to="projects"
               smooth={true}
             >
