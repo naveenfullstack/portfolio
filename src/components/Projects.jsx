@@ -43,50 +43,6 @@ export default function Projects() {
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi. Nisi maiores quam fuga consequuntur at eligendi voluptatem nostrum expedita aliquid soluta? Sapiente!",
     },
-    {
-      id: 4,
-      name: "Live Aquaria Partner Portel",
-      type: "mobile application",
-      view: "CEO of Fitwin Corporation",
-      img: "https://i.pinimg.com/564x/ff/c4/e8/ffc4e8ea747a770b93c8a1d64c548971.jpg",
-      short_description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi.",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi. Nisi maiores quam fuga consequuntur at eligendi voluptatem nostrum expedita aliquid soluta? Sapiente!",
-    },
-    {
-      id: 5,
-      name: "Dilmah Content Managment system",
-      type: "web application",
-      view: "CEO of Fitwin Corporation",
-      img: "https://i.pinimg.com/564x/2c/b1/12/2cb1125ad6ac92fa0104778e8b9a6888.jpg",
-      short_description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi.",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi. Nisi maiores quam fuga consequuntur at eligendi voluptatem nostrum expedita aliquid soluta? Sapiente!",
-    },
-    {
-      id: 6,
-      name: "Shop on cloud",
-      type: "website",
-      view: "CEO of Fitwin Corporation",
-      img: "https://i.pinimg.com/564x/d6/f5/af/d6f5afacf625ea70d6a51030399a8278.jpg",
-      short_description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi.",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi. Nisi maiores quam fuga consequuntur at eligendi voluptatem nostrum expedita aliquid soluta? Sapiente!",
-    },
-    {
-      id: 7,
-      name: "ebeyonds education training system",
-      type: "web application",
-      view: "CEO of Fitwin Corporation",
-      img: "https://i.pinimg.com/564x/6d/fd/9a/6dfd9a2753d3add89cfc8ee235f9a6fe.jpg",
-      short_description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi.",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit repudiandae blanditiis itaque nam repellat, iure quasi. Nisi maiores quam fuga consequuntur at eligendi voluptatem nostrum expedita aliquid soluta? Sapiente!",
-    },
   ];
 
   const [popupData, setPopupData] = useState(null);

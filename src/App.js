@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import "../src/App.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "../src/App.css";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 
 /* IMPORT COMPORNENTS */

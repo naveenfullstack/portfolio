@@ -114,6 +114,14 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      client_description: [
+        "0.95rem",
+        {
+          lineHeight: "1.8rem",
+          letterSpacing: "-0.01em",
+          fontWeight: "400",
+        },
+      ],
     },
     maxWidth: {
       layout: "1366px",
