@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section>
       <div
-        className="bg-cover lg:bg-center md:bg-center sm:bg-top lg:h-hero md:h-hero sm:h-[25rem] w-full"
+        className="bg-cover lg:bg-center md:bg-center sm:bg-top lg:h-[50rem] md:h-[50rem] sm:h-[25rem] w-full"
         style={{
           backgroundImage: `url(${bgimage})`,
         }}
@@ -16,7 +16,7 @@ export default function Hero() {
           <Header />
         </div>
 
-        <div className="lg:h-hero justify-center items-center ">
+        <div className="lg:h-[50rem] justify-center items-center ">
           <div className="lg:pt-28 sm:pt-48 md:pt-28 bg-gradient-to-b from-black space-y-4">
             <h1 className="text-center capitalize my-5 mb-2.5 leading-extra-lead lg:text-hero_title md:text-hero_title sm:text-title_mobile font-secondary">
               Bring Your Imagination To Life <br />

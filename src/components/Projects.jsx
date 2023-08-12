@@ -87,12 +87,12 @@ export default function Projects() {
             {Projects.map((index) => (
               <div
                 key={index.id}
-                className="border w-full rounded-lg lg:h-project md:h-project sm:h-project_mobile bg-cover bg-top"
+                className="border w-full rounded-lg lg:h-[30rem] md:h-[30rem] sm:h-[15rem] bg-cover bg-top"
                 style={{
                   backgroundImage: `url(${index.img})`,
                 }}
               >
-                <div className="rounded lg:h-project md:h-project sm:h-project_mobile bg-black/[.75] flex items-end opacity-0 hover:opacity-100 transition-opacity">
+                <div className="rounded lg:h-[30rem] md:h-[30rem] sm:h-[15rem] bg-black/[.75] flex items-end opacity-0 hover:opacity-100 transition-opacity">
                   <div className="p-4 w-full">
                     <div className="flex w-full justify-center mb-24">
                       <button
@@ -116,7 +116,7 @@ export default function Projects() {
                 </div>
               </div>
             ))}
-            <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-project md:h-project sm:h-project_mobile">
+            <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-[30rem] md:h-[30rem] sm:h-[15rem]">
               <div className="">
                 <div className="flex justify-center">
                   <img className="" src={ViewAllProjects} alt="Project"></img>
@@ -136,14 +136,14 @@ export default function Projects() {
             {Projects.map((index) => (
               <div
                 key={index.id}
-                className="border w-full rounded-lg lg:h-project md:h-project sm:h-project_mobile bg-cover bg-top cursor-pointer"
+                className="border w-full rounded-lg lg:h-[30rem] md:h-[30rem] sm:h-[15rem] bg-cover bg-top cursor-pointer"
                 style={{
                   backgroundImage: `url(${index.img})`,
                 }}
                 onClick={() => handleExternalLinkClick(index.view_more)}
               ></div>
             ))}
-            <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-project md:h-project sm:h-project_mobile">
+            <div className="flex capitalize justify-center items-center lg:border-project md:border-project sm:border-project_mobile border-primary_text rounded-lg hover:bg-primary_bg hover:border-0 hover:transition hover:delay-750 hover:duration-300 hover:ease-in-out lg:h-[30rem] md:h-[30rem] sm:h-[15rem">
               <div className="">
                 <div className="flex justify-center">
                   <img className="" src={ViewAllProjects} alt="Project"></img>

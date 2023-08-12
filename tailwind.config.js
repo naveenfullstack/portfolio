@@ -143,12 +143,12 @@ module.exports = {
       'full': '9999px',
       'large': '12px',
     },
-    height: {
-      project: '30rem',
-      project_mobile: '15rem',
-      hero: "50rem",
-      full: "100%",
-    },
+    // height: {
+    //   project: '30rem',
+    //   project_mobile: '15rem',
+    //   hero: "50rem",
+    //   full: "100%",
+    // },
     maxHeight: {
       '80': '33rem',
     },
