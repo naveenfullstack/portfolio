@@ -84,7 +84,7 @@ export default function Projects() {
       <div>
         <div className="sm:hidden md:hidden lg:block">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {Projects.map((index) => (
+            {Projects.slice(0, 7).map((index) => (
               <div
                 key={index.id}
                 className="border w-full rounded-lg lg:h-[30rem] md:h-[30rem] sm:h-[15rem] bg-cover bg-top"
